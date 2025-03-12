@@ -57,17 +57,7 @@ importers:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.7.3)
 
-  packages/a: {}
-
-  packages/b:
-    dependencies:
-      '@fanqie/a':
-        specifier: workspace:^
-        version: link:../a
-
   packages/components: {}
-
-  packages/fanqie: {}
 
   packages/fanqie-ui: {}
 
