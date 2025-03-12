@@ -1,6 +1,6 @@
 {
   "name": "fanqie-ui-demo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "es/index.mjs",
   "module": "es/index.mjs",
@@ -8,18 +8,22 @@
     "es",
     "lib"
   ],
-  "keywords":[
+  "keywords": [
     "fanqie-ui-demo",
     "vue3组件库demo"
   ],
   "sideEffects": [
     "**/*.css"
   ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "番茄",
   "license": "MIT",
   "typings": "lib/index.d.ts",
+  "scripts": {
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chenwing-gum/Fanqie-UI"
+  },
   "packageManager": "pnpm@10.4.1"
 }
