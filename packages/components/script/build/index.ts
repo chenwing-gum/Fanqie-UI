@@ -5,18 +5,18 @@ import less from 'gulp-less'
 import autoprefixer from 'gulp-autoprefixer'
 import run from "../utils/run";
 
-// 删除 fanqie
+// 删除 fanqie-ui
 
 export const removeDist = () => {
-  return delPath(`${pkgPath}/fanqie`)
+  return delPath(`${pkgPath}/fanqie-ui`)
 }
 
 export const buildStyle = () => {
   return src(`${componentPath}/src/**/style/**.less`)
     .pipe(less())
     .pipe(autoprefixer())
-    .pipe(dest(`${pkgPath}/fanqie/lib/src`))
-    .pipe(dest(`${pkgPath}/fanqie/es/src`))
+    .pipe(dest(`${pkgPath}/fanqie-ui/lib/src`))
+    .pipe(dest(`${pkgPath}/fanqie-ui/es/src`))
 }
 
 export const buildComponent = async () => {
