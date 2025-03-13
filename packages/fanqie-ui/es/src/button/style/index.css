@@ -17,13 +17,16 @@
   font-size: 14px;
   border-radius: 4px;
 }
-.fq-button,
+.fq-button:hover {
+  background: #ecf5ff;
+  border-color: #c6e2ff;
+  color: #409eff;
+}
 .fq-button--primary {
   color: #fff;
   background-color: #409eff;
   border-color: #409eff;
 }
-.fq-button:hover,
 .fq-button--primary:hover {
   background: #66b1ff;
   border-color: #66b1ff;

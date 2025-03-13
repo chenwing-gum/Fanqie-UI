@@ -2,12 +2,21 @@
 Object.defineProperties(exports, { __esModule: { value: true }, [Symbol.toStringTag]: { value: "Module" } });
 const vue = require("vue");
 require("./style/index.css");
-const _hoisted_1 = { class: "fq-icon" };
 const _sfc_main = /* @__PURE__ */ vue.defineComponent({
+  ...{ name: "fq-icon" },
   __name: "icon",
+  props: {
+    type: {}
+  },
   setup(__props) {
+    const iconProps = __props;
+    const iconStyle = vue.computed(() => {
+      return { [`fq-icon--${iconProps.type}`]: iconProps.type };
+    });
     return (_ctx, _cache) => {
-      return vue.openBlock(), vue.createElementBlock("div", _hoisted_1, "Icon");
+      return vue.openBlock(), vue.createElementBlock("div", {
+        class: vue.normalizeClass(["fq-icon", iconStyle.value])
+      }, "Icon", 2);
     };
   }
 });

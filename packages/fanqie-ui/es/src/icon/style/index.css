@@ -1,3 +1,6 @@
-.ea-icon {
+.fq-icon {
   color: red;
+}
+.fq-icon--dark {
+  color: #000;
 }
