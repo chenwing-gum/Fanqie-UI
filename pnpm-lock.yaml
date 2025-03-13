@@ -77,6 +77,10 @@ importers:
   packages/utils: {}
 
   site:
+    dependencies:
+      fanqie-ui-demo:
+        specifier: workspace:^
+        version: link:../packages/fanqie-ui
     devDependencies:
       vitepress:
         specifier: ^1.6.3
