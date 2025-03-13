@@ -1,5 +1,5 @@
 import DefaultTheme from "vitepress/theme";
-import fanqieUI from "@Fanqie-UI/components";
+import fanqieUI from "fanqie-ui-demo";
 export default {
   ...DefaultTheme,
   enhanceApp: async ({ app }) => {
